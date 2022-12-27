@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return(
@@ -14,7 +15,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='m-auto px-5'>
-            <Nav.Link  href="#home">Historia</Nav.Link>
+          
+            <Nav.Link  href="/">Historia</Nav.Link>
             <Nav.Link href="#link">Foro</Nav.Link>
             <Nav.Link href="#link">Libros</Nav.Link>
            

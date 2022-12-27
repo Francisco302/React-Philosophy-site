@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Philosopher.css';
 import profileImg from '../../img/profile.jpg';
+import { Link } from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image'
 
 class Philosopher extends React.Component{
   constructor(props){
@@ -17,13 +20,14 @@ class Philosopher extends React.Component{
       const {name, image, reference} = this.state;
       
       return(
-          <div>
-            <a href={reference}>
-              <img src={image}/>
-            </a>
+          <Col>
+             <Link to="/philosopher">
+              
+              <Image src={image}/>
+             </Link>
               {name}
               
-          </div>
+          </Col>
       )
   }
 }

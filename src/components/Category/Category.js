@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Category.css';
+import {
+  Row,
+  Col
+} from 'react-bootstrap';
 
 class Category extends React.Component{
   constructor(props){
@@ -16,7 +20,9 @@ class Category extends React.Component{
       return(
           <div>
               <h1>{theme}</h1>
+            <Row> 
               {data}
+          </Row>
           </div>
       )
   }

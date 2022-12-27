@@ -1,27 +1,29 @@
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Century from './components/Century/Century';
-import Category from './components/Category/Category';
-import Philosopher from './components/Philosopher/Philosopher';
+import React from 'react';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Images import
-import {
-  platonImg
-} from './img/index';
+import NavBar from './components/NavBar/NavBar';
+import './App.css';
+import PagesHomePage from './pages/HomePage/HomePage';
+import PhilosopherPage from './pages/PhilosopherPage/PhilosopherPage';
+
+
+
 
 function App() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar />
+    <PagesHomePage/> */}
 
-      <Century dataParentToChild = {1998}/>
-      <Category theme = {'Realismo'}>
-       <Philosopher name = {'Platon'} image = {platonImg} />
-       <Philosopher name = {'Platon2'} image = {platonImg}/>
-       <Philosopher name = {'Platon3'} />
-      </Category>
-      
-      <Century dataParentToChild = {1998}/>
+      <>
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<PagesHomePage />} />
+          <Route path="/philosopher" element={<PhilosopherPage />} />
+          <Route path="/about" element={<PhilosopherPage />} />
+        </Routes>
+      </>
 
     </div>
   );
