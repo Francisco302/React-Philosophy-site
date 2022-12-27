@@ -1,0 +1,10 @@
+.NavBar {}
+
+a {
+    margin-left: 30px;
+}
+
+.nav-bar {
+    font-family: 'Roboto', sans-serif;
+    color: #2699FB !important;
+}
