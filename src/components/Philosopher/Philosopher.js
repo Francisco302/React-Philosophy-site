@@ -20,13 +20,14 @@ class Philosopher extends React.Component{
       const {name, image, reference} = this.state;
       
       return(
-          <Col>
+          <Col className='text-center'>
              <Link to="/philosopher">
-              
-              <Image src={image}/>
+              <img src={image} className="img-fluid"/>
              </Link>
-              {name}
-              
+             <br/>
+             <h3>
+              {name} 
+             </h3>
           </Col>
       )
   }

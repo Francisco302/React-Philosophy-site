@@ -14,8 +14,13 @@ class Century extends React.Component{
   render(){
       const {data} = this.state;
       return(
-          <div>
+          <div className='text-center mt-3'>
+            <br/>
+            <h1 className='century-title text-center'><span className='mx-3'>
+
               {data}
+            </span>
+            </h1>
           </div>
       )
   }

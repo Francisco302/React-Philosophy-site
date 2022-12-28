@@ -20,9 +20,9 @@ class Category extends React.Component{
       return(
           <div>
               <h1>{theme}</h1>
-            <Row> 
+            <div className='row'> 
               {data}
-          </Row>
+          </div>
           </div>
       )
   }

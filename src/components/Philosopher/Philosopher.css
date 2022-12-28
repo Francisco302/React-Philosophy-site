@@ -1,1 +1,14 @@
 .Philosopher {}
+
+
+img {
+    border-radius: 50%;
+    will-change: transform;
+    transition: transform 450ms;
+    width: 200px;
+  }
+  
+img:hover {
+    transition: transform 125ms;
+    transform: translateY(-10px);
+  }
